@@ -9,4 +9,4 @@ RUN npm run build
 ### STAGE 2: Run ###
 FROM nginx:1.21.3-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /usr/src/app/dist/angular-nginx-docker /usr/share/nginx/html
+COPY --from=build /Users/vicky/Downloads/app/dist/angular-nginx-docker /usr/share/nginx/html
